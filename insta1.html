@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web revision 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background: #FAFAFA;
+        }
+
+        #margin {
+            height: 30px;
+        }
+
+        .container {
+            padding-top: 40px;
+            width: 350px;
+            height: 335px;
+            background-image: url("https://www.dafont.com/forum/attach/orig/7/3/737566.png?1");
+            background-size: 50%;
+            background-position: center 30px;
+            background-repeat: no-repeat;
+            background-color: white;
+            border: 1px solid rgb(223, 221, 221);
+            margin: auto;
+            overflow: hidden;
+            border-radius: 3px;
+        }
+        .container2 {
+            width: 350px;
+            height: 20px;
+            background-color: white;
+            border: 1px solid rgb(223, 221, 221);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 12px;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            padding: 20px 0px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 30px;
+            width: 45%;
+            /* padding: 20px 30px 300px 30px; */
+        }
+
+        .id {
+            margin: left auto;
+            color: rgb(189, 185, 185);
+            height: 18px;
+            width: 260px;
+            padding: 9px 0 7px 8px;
+            margin-top: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 75;
+            border: 0.5px solid rgb(192, 190, 190);
+            border-radius: 3px;
+            background-color: #FAFAFA;
+        }
+
+        #div {
+            /* border: red solid 5px; */
+            margin-top: 70px;
+            text-align: center;
+            float: top;
+        }
+
+        #login {
+            height: 30px;
+            width: 270px;
+            color: rgb(189, 185, 185);
+            padding: 9px 0 7px 8px;
+            margin-top: 8px;
+            font-weight: bold;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 75;
+            border: 0.5px solid rgb(192, 190, 190);
+            border-radius: 3px;
+            background-color: rgb(78, 78, 235);
+        }
+        #login:hover{
+            background-color: royalblue;
+        }
+
+        #or {
+            color: #777575;
+            margin: -2px 0;
+            font-weight: 600;
+            position: relative;
+            font-size: 14px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+        }
+
+        #padd {
+            padding-left: 65px;
+            padding-right: 65px;
+        }
+
+        #or:before {
+            position: absolute;
+            content: ' ';
+            width: 38%;
+            height: 1px;
+            text-align: center;
+            background: #b6b6b6;
+            left: 0;
+            top: 50%;
+
+        }
+
+        #or:after {
+            position: absolute;
+            content: ' ';
+            width: 38%;
+            height: 1px;
+            float: right;
+            text-align: center;
+            background: #b6b6b6;
+            right: 0;
+            top: 50%;
+
+        }
+        #icon{
+            text-align: center;
+           
+        }
+        .fa {
+            padding: 4px 1px 0px 4px;
+            height: 18px;
+            font-size: 15px;
+            width: 16px;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 20px;
+            margin-left: 33px;
+            margin-right: 8px;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        #fblink{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+            color: #385185;
+            font-weight: 600;
+        }
+        #forgot{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            text-decoration: none;
+            color: #00376B;
+        }
+        #forgotdiv{
+            text-align: center;
+            margin-top: 20px;
+        }
+        #signup{
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 600;
+            color: #0095F6;
+            font-size: 14px;
+        }
+        .centerapp{
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .img1{
+            display: inline;
+            width: 12%;
+        }
+        #creator{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        #appl{
+            width: 100%;
+            margin-top: 20px;
+            text-align: center;             /*Text align property apply to block elements*/
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="margin">
+
+    </div>
+    <div class="container">
+        <div id="div">
+            <form action="abhay.php">
+                <input type="text" name="id" class="id" placeholder="Phone number, username, or email" required>
+                <input type="password" name="pw" class="id" placeholder="Password" required>
+                <br>
+                <button id="login">Log In</button>
+            </form>
+        </div>
+        <div id="padd">
+            <br>
+            <div id="or">OR</div>
+        </div>
+        <div id="icon">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="http:\\www.facebook.com" id="fblink">Log in with Facebook</a>
+        </div>
+        <div id="forgotdiv">
+            <a href="http:\\www.facebook.com" id="forgot">Forgot password?</a>
+        </div>
+    </div>
+    <div class="container2">
+        <span>Don't have an account?</span>
+        <a id="signup" href="http:\\www.facebook.com">Sign up</a>
+    </div>
+    <div class="centerapp">
+        <span>Get the app.</span>
+    </div>
+    <div id="appl">
+        <img class="img1" src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png" 
+         alt="App store">
+        <img class="img1" src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png" alt="Playstore">
+    </div>
+    <div  id="creator"> 
+        <br>
+        <br>
+        <p>Created by <strong>Abhay Dhupar</strong></p>
+    </div>
+    <br>
+</body>
+
+</html>
